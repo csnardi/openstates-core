@@ -375,6 +375,7 @@ def test_no_person_updates_with_committee(person):
         id=com_id,
         name="Education",
         chamber="lower",
+        classification="subcommittee",
         jurisdiction="ocd-jurisdiction/country:us/state:nc/government",
         members=[Membership(name="Steve", role="chair", person_id=person.id)],
     )
