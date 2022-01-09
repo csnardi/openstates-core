@@ -364,6 +364,7 @@ def test_committee_to_db_memberships():
     w_mem = org.memberships.filter(person_name="Wendy")[0]
     assert w_mem.person == wendy
 
+
 @pytest.mark.django_db
 def test_no_person_updates_with_committee(person):
     created, updated = load_person(person)
