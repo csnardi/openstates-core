@@ -367,7 +367,7 @@ def test_committee_to_db_memberships():
 @pytest.mark.django_db
 def test_no_person_updates_with_committee(person):
     created, updated = load_person(person)
-    p = DjangoPerson.objects.get(pk=person.id)
+    DjangoPerson.objects.get(pk=person.id)
 
     com_id = "ocd-organization/00000000-1111-1111-1111-222222222222"
     new_com = Committee(
